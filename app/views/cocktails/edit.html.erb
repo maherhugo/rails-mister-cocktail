@@ -1,0 +1,8 @@
+<h1>Edit Cocktails</h1>
+<%= form_for(@cocktail) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+<%= render "doses/form" %>
+<%= link_to "Back to all Cocktails", cocktails_path, class: "btn btn-primary"%>
